@@ -12,7 +12,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
-    message: "",
+    message: ""
   });
 
   const [loading, setLoading] = useState(false);
@@ -23,7 +23,7 @@ const Contact = () => {
 
     setForm({
       ...form,
-      [name]: value,
+      [name]: value
     });
   };
 
@@ -39,10 +39,10 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Software Engineer",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
+          to_email: "shahriar.rizvi02@gmail.com",
+          message: form.message
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -52,7 +52,7 @@ const Contact = () => {
           setForm({
             name: "",
             email: "",
-            message: "",
+            message: ""
           });
         },
         (error) => {
@@ -60,7 +60,7 @@ const Contact = () => {
           console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
-        },
+        }
       );
   };
 
@@ -98,7 +98,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="What's your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>

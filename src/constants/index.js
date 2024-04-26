@@ -1,172 +1,161 @@
 import {
-  mobile,
+  aws,
   backend,
+  carrent,
   creator,
-  web,
+  csunshine,
+  expressjs,
+  git,
+  graphql,
   javascript,
-  typescript,
-  html,
-  css,
+  jobit,
+  mobile,
+  mongodb,
+  nextjs,
+  nodejs,
+  postgresql,
   reactjs,
   redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
+  sequelize,
   tripguide,
-  threejs,
+  tweetsy,
+  typescript,
+  usbangla,
+  web
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "About"
   },
   {
     id: "work",
-    title: "Work",
+    title: "Work"
   },
   {
     id: "contact",
-    title: "Contact",
-  },
+    title: "Contact"
+  }
 ];
 
 const services = [
   {
     title: "Web Application Development",
-    icon: web,
+    icon: web
   },
   {
     title: "Backend Development",
-    icon: backend,
+    icon: backend
   },
   {
     title: "Mobile Application Development",
-    icon: mobile,
+    icon: mobile
   },
   {
     title: "Custom Software Development",
-    icon: creator,
-  },
+    icon: creator
+  }
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
-    icon: javascript,
+    icon: javascript
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: typescript
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: reactjs
+  },
+  {
+    name: "Next JS",
+    icon: nextjs
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    icon: redux
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: nodejs
+  },
+  {
+    name: "Express JS",
+    icon: expressjs
+  },
+  {
+    name: "GraphQL",
+    icon: graphql
   },
   {
     name: "MongoDB",
-    icon: mongodb,
+    icon: mongodb
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "PostgreSQL",
+    icon: postgresql
+  },
+  {
+    name: "AWS",
+    icon: aws
+  },
+  {
+    name: "Sequelize",
+    icon: sequelize
   },
   {
     name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+    icon: git
+  }
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Engineer",
+    company_name: "TechnoNext Software Ltd - (US-Bangla Group)",
+    icon: usbangla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Actively contributing to the development and success of a groundbreaking Food Delivery App project, closely aligned with industry leaders like FoodPanda",
+      "Employed Agile methodologies to adapt to evolving project requirements, fostering a dynamic and collaborative work environment.",
+      "Implemented rigorous testing protocols to guarantee the app's reliability, security, and overall quality.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Participating in code reviews and providing constructive feedback to other developers."
+    ]
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Full stack Software Developer",
+    company_name: "C-Sunshine",
+    icon: csunshine,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2022 - Sep 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Spearheaded the development of cutting-edge e-commerce solutions.",
+      "Utilized Node.js, including Nest.js, to create robust and scalable applications.",
+      "Designed system process and workflows for new CMS App projects.",
+      "Maintained productivity on the other stack projects based on PHP (laravel, Vue etc).",
+      "Engineered APIs and handled seamless integrations."
+    ]
   },
+  {
+    title: "Backend Software Developer (Intern)",
+    company_name: "Tweetsy.inc",
+    icon: tweetsy,
+    iconBg: "#383E56",
+    date: "March 2022 - Sep 2022",
+    points: [
+      "Contributed to SAAS software development by implementing backend functionalities.",
+      "Applied DevOps practices to streamline the development and deployment processes.",
+      "Designed and managed databases, with a specialization in NoSQL databases.",
+      "Designed workflow for new features on different apps according to requirements and presented them to the project manager.",
+      "Successfully launched the first SAAS software into production to enhance user experiences."
+    ]
+  }
 ];
 
 const testimonials = [
@@ -176,7 +165,7 @@ const testimonials = [
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: "https://randomuser.me/api/portraits/women/4.jpg"
   },
   {
     testimonial:
@@ -184,7 +173,7 @@ const testimonials = [
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "https://randomuser.me/api/portraits/men/5.jpg"
   },
   {
     testimonial:
@@ -192,8 +181,8 @@ const testimonials = [
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+    image: "https://randomuser.me/api/portraits/women/6.jpg"
+  }
 ];
 
 const projects = [
@@ -204,19 +193,19 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "mongodb",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
-      },
+        color: "pink-text-gradient"
+      }
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/"
   },
   {
     name: "Job IT",
@@ -225,19 +214,19 @@ const projects = [
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "restapi",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "scss",
-        color: "pink-text-gradient",
-      },
+        color: "pink-text-gradient"
+      }
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/"
   },
   {
     name: "Trip Guide",
@@ -246,20 +235,20 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "blue-text-gradient"
       },
       {
         name: "supabase",
-        color: "green-text-gradient",
+        color: "green-text-gradient"
       },
       {
         name: "css",
-        color: "pink-text-gradient",
-      },
+        color: "pink-text-gradient"
+      }
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+    source_code_link: "https://github.com/"
+  }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };
