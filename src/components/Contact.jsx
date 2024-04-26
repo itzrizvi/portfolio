@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { usefulcontacts } from "../constants";
 
 const Contact = () => {
   const formRef = useRef();
@@ -74,6 +75,25 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className="flex flex-row justify-start items-center gap-9 mt-2">
+          {usefulcontacts?.length &&
+            usefulcontacts.map((contact, index) => {
+              return (
+                <div
+                  key={index}
+                  onClick={() => window.open(contact?.url, "_blank")}
+                  className="violet-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img
+                    src={contact?.logo}
+                    alt="source code"
+                    className="w-2/2 h-2/2 p-1 object-contain"
+                  />
+                </div>
+              );
+            })}
+        </div>
 
         <form
           ref={formRef}

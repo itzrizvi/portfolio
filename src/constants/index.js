@@ -1,27 +1,31 @@
 import {
   aws,
   backend,
-  carrent,
+  comingsoon,
   creator,
   csunshine,
   expressjs,
-  git,
+  foodi,
   graphql,
   javascript,
-  jobit,
   mobile,
   mongodb,
   nextjs,
   nodejs,
+  playstore,
   postgresql,
   reactjs,
+  reactnative,
   redux,
   sequelize,
-  tripguide,
   tweetsy,
   typescript,
   usbangla,
-  web
+  web,
+  githubC,
+  linkedin,
+  gmail,
+  phone
 } from "../assets";
 
 export const navLinks = [
@@ -72,6 +76,10 @@ const technologies = [
     icon: reactjs
   },
   {
+    name: "React Native",
+    icon: reactnative
+  },
+  {
     name: "Next JS",
     icon: nextjs
   },
@@ -106,10 +114,6 @@ const technologies = [
   {
     name: "Sequelize",
     icon: sequelize
-  },
-  {
-    name: "git",
-    icon: git
   }
 ];
 
@@ -161,7 +165,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Rizvi proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -169,7 +173,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Wow - absolutely amazing developer. He answered all my questions after the website was made. I can't wait to work with Shahriar again! thanks for your hard work!",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -177,78 +181,189 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "Awesome developer. He did it again. A very good developer with proper communication skills, he work for buyer satisfaction. Glad to work with him.",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg"
+  },
+  {
+    testimonial:
+      "This developer is by far the most trustworthy, analytical, helpful and knowledgeable seller that I have come across on this website. Thank you Shahriar!",
+    name: "Jenny",
+    designation: "CTO",
+    company: "Cescols Inc",
+    image: "https://randomuser.me/api/portraits/women/8.jpg"
+  },
+  {
+    testimonial:
+      "He is sharp and to the point. Fixed the bugs on my CMS software which had some production bugs.",
+    name: "William",
+    designation: "CTO",
+    company: "C-Sunshine",
+    image: "https://randomuser.me/api/portraits/men/14.jpg"
   }
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Foodi Web App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Bangladesh's largest Food delivery web application, Contributing on some very vital areas this application like Portal, CMS and CRM. So far this is the first scalable and optimized food delivery app in Bangladesh",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient"
+        name: "typescript",
+        color: "red-orange-text-gradient"
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient"
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient"
-      }
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/"
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient"
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient"
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient"
-      }
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/"
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient"
       },
       {
-        name: "supabase",
+        name: "prime-react",
         color: "green-text-gradient"
       },
       {
-        name: "css",
+        name: "context-api",
+        color: "yellow-green-text-gradient"
+      },
+      {
+        name: "redux",
         color: "pink-text-gradient"
+      },
+      {
+        name: "formik",
+        color: "blue-purple-text-gradient"
       }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/"
+    logo: foodi,
+    project_link: "https://foodibd.com"
+  },
+  {
+    name: "Foodi Mobile App",
+    description:
+      "Actively contributing on Mobile Application of Foodi. Main responsibilities are optimizing the performances, fix the production bugs, introducing new feature or improvement of any existing feature. Contributing ",
+    tags: [
+      {
+        name: "typescript",
+        color: "red-orange-text-gradient"
+      },
+      {
+        name: "react-native",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient"
+      },
+      {
+        name: "flipper",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "mmkv",
+        color: "yellow-green-text-gradient"
+      },
+      {
+        name: "hook-form",
+        color: "purple-pink-text-gradient"
+      }
+    ],
+    logo: playstore,
+    project_link: "https://play.google.com/store/apps/details?id=com.foodiBd"
+  },
+  {
+    name: "iMessage - Live Chat",
+    description:
+      "Web-based platform that allows users to search and connect with anonymous peoples and chat and also have can have conversation by creating groups. Handled authentication by only google sign in and by one click.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-purple-text-gradient"
+      },
+      {
+        name: "nextjs",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient"
+      },
+      {
+        name: "graphQL",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "chakra-ui",
+        color: "red-orange-text-gradient"
+      }
+    ],
+    source_code_link: "https://github.com/itzrizvi/iMessage-frontend"
+  },
+  {
+    name: "E-commerce Backend",
+    description:
+      "The backend of this e-commerce application is built using Node.js with Express.js as the primary web framework. Utilized Apollo Server for implementing a GraphQL API, enabling efficient data retrieval and manipulation. AWS SDK is integrated for seamless interaction with Amazon Web Services, while bcrypt ensures secure password hashing for user authentication. ",
+    tags: [
+      {
+        name: "nodejs",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "expressjs",
+        color: "green-text-gradient"
+      },
+      {
+        name: "apollo-server",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "graphQL",
+        color: "yellow-green-text-gradient"
+      },
+      {
+        name: "postgreSQL",
+        color: "purple-pink-text-gradient"
+      },
+      {
+        name: "aws",
+        color: "green-text-gradient"
+      }
+    ],
+    source_code_link: "https://github.com/itzrizvi/e-commerce-backend-v2"
+  },
+  {
+    name: "Loading...",
+    description: "New and major projects are coming up soon...",
+    logo: comingsoon,
+    project_link: "#"
   }
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+const usefulcontacts = [
+  {
+    logo: linkedin,
+    url: "https://www.linkedin.com/in/shahriar-rizvi/"
+  },
+  {
+    logo: githubC,
+    url: "https://github.com/itzrizvi"
+  },
+  {
+    logo: gmail,
+    url: "mailto:shahriar.rizvi02@gmil.com"
+  },
+  {
+    logo: phone,
+    url: "tel:+8801766922253"
+  }
+];
+
+export {
+  experiences,
+  projects,
+  services,
+  technologies,
+  testimonials,
+  usefulcontacts
+};

@@ -18,7 +18,7 @@ const Hero = () => {
           <h1
             className={`font-black text-white lg:text-[60px] sm:text-[50px] xs:text-[40px] text-[40px] lg:leading-[98px] mt-1 text-white`}
           >
-            Hi, I'm <span className="text-[#915EFF]">Shahriar Rizvi</span>
+            Hi, this is <span className="text-[#915EFF]">Shahriar Rizvi</span>
           </h1>
           <p className={`${styles.heroSubText} mt-0 text-white-100`}>
             I Develop Softwares (CMS, CRM, Portal), Web Applications and
@@ -34,12 +34,12 @@ const Hero = () => {
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 24, 0]
               }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: "loop"
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
