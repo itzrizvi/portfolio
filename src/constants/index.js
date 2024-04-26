@@ -106,14 +106,6 @@ const technologies = [
   {
     name: "PostgreSQL",
     icon: postgresql
-  },
-  {
-    name: "AWS",
-    icon: aws
-  },
-  {
-    name: "Sequelize",
-    icon: sequelize
   }
 ];
 
