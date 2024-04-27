@@ -6,8 +6,11 @@ import { technologies } from "../constants";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { useWindowSize } from "../utils/useWindowSize";
 
 const Tech = () => {
+  const { width } = useWindowSize();
+  const isMobile = width < 640;
   return (
     <>
       <motion.div variants={textVariant()} className="mb-10">
@@ -19,9 +22,19 @@ const Tech = () => {
         </h2>
       </motion.div>
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technology) => (
+        {technologies.map((technology, index) => (
           <div className="w-24 h-24" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
+            {!isMobile ? (
+              <BallCanvas icon={technology.icon} />
+            ) : (
+              <div className="rounded-full flex justify-center items-center cursor-pointer">
+                <img
+                  src={technology?.icon}
+                  alt="source code"
+                  className="w-2/2 h-2/2 p-1 object-contain"
+                />
+              </div>
+            )}
           </div>
         ))}
       </div>

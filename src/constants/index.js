@@ -1,5 +1,4 @@
 import {
-  aws,
   backend,
   comingsoon,
   creator,
@@ -17,7 +16,6 @@ import {
   reactjs,
   reactnative,
   redux,
-  sequelize,
   tweetsy,
   typescript,
   usbangla,

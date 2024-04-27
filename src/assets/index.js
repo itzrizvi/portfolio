@@ -11,7 +11,6 @@ import mobile from "./mobile.png";
 import playstore from "./playstore.png";
 import web from "./web.png";
 
-import aws from "./tech/aws.png";
 import expressjs from "./tech/expressjs.png";
 import graphql from "./tech/graphql.png";
 import javascript from "./tech/javascript.png";
@@ -22,7 +21,6 @@ import postgresql from "./tech/postgresql.png";
 import reactjs from "./tech/reactjs.png";
 import reactnative from "./tech/react-native.png";
 import redux from "./tech/redux.png";
-import sequelize from "./tech/sequelize.png";
 import typescript from "./tech/typescript.png";
 // Companies
 import csunshine from "./company/c-sunshine.png";
@@ -35,7 +33,6 @@ import linkedin from "./contacts/linkedin.png";
 import phone from "./contacts/phone.png";
 
 export {
-  aws,
   backend,
   close,
   creator,
@@ -58,7 +55,6 @@ export {
   reactjs,
   reactnative,
   redux,
-  sequelize,
   tweetsy,
   typescript,
   usbangla,
