@@ -27,11 +27,11 @@ const Tech = () => {
             {!isMobile ? (
               <BallCanvas icon={technology.icon} />
             ) : (
-              <div className="rounded-full flex justify-center items-center cursor-pointer">
+              <div className="bg-slate-200 rounded-full flex justify-center items-center cursor-pointer">
                 <img
                   src={technology?.icon}
                   alt="source code"
-                  className="w-2/2 h-2/2 p-1 object-contain"
+                  className="w-2/2 h-2/2 p-4 object-contain"
                 />
               </div>
             )}
