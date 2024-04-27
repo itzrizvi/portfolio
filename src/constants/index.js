@@ -179,7 +179,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "This developer is by far the most trustworthy, analytical, helpful and knowledgeable seller that I have come across on this website. Thank you Shahriar!",
+      "This developer is by far the most trustworthy, analytical, helpful and knowledgeable that I have come across on this website. Thank you Shahriar!",
     name: "Jenny",
     designation: "CTO",
     company: "Cescols Inc",
