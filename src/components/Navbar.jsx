@@ -42,10 +42,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logoPng} alt="logo" className="w-9 h-9 object-contain" />
+          <img
+            src={logoPng}
+            alt="logo"
+            className="w-[180px] sm:w-[180px] md:w-[180px] lg:w-[180px] h-16 object-contain"
+          />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
-            Shahriar Rizvi &nbsp;
-            <span className="md:block hidden"> | Software Engineer</span>
+            <span className="lg:block hidden"> | Software Engineer</span>
           </p>
         </Link>
 

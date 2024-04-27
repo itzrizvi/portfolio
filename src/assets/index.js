@@ -4,7 +4,7 @@ import creator from "./creator.png";
 import foodi from "./foodilogo.png";
 import comingsoon from "./coming-soon.png";
 import github from "./github.png";
-import logoPng from "./logo.png";
+import logoPng from "./new-logo.svg";
 import logo from "./logo.svg";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
