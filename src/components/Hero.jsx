@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { useCallback } from "react";
 
 const Hero = () => {
+  const computerCanvas = useCallback(() => {
+    return <ComputersCanvas />;
+  }, []);
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -27,7 +30,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
+      {computerCanvas()}
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
