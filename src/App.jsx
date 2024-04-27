@@ -11,8 +11,11 @@ import {
   Works,
   StarsCanvas
 } from "./components";
+import { useWindowSize } from "./utils/useWindowSize";
 
 const App = () => {
+  const { width } = useWindowSize();
+  const isMobile = width < 640;
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -28,7 +31,7 @@ const App = () => {
         <Feedbacks />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+          {!isMobile && <StarsCanvas />}
         </div>
       </div>
     </BrowserRouter>
