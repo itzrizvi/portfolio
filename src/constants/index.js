@@ -244,7 +244,7 @@ const projects = [
   {
     name: "Foodi Mobile App",
     description:
-      "Actively contributing on Mobile Application of Foodi. Main responsibilities are optimizing the performances, fix the production bugs, introducing new feature or improvement of any existing feature. Contributing ",
+      "Actively contributing on Mobile Application of Foodi. Main responsibilities are optimizing the performances, fix the production bugs, introducing new feature or improvement of any existing feature.",
     tags: [
       {
         name: "typescript",
