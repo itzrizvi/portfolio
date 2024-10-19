@@ -1,8 +1,0 @@
-- Make this contact system https://rekhchandsahu.com/contact
-- Update all contents like Tech/Coding, Work and Projects, Photography, other interests etc
-- Add all projects
-- Add all blog
-- Add substack subscription form
-- Update all testimonials
-- Update all social links and Icons
-- Update all footer links
