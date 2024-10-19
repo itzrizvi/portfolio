@@ -91,8 +91,8 @@ const ProjectPage = (props: ProjectPageProps) => {
       <Header metadata={metadata} />
       <Image
         src={`/images/projects/${slug}/cover.webp`}
-        width={1280}
-        height={832}
+        width={480}
+        height={132}
         alt={metadata.name}
         className="my-12 rounded-lg"
       />
