@@ -25,7 +25,7 @@ function Contact() {
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="space-y-3">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Get In Touch
+              Queries? Feel free to ask!
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Have a question or want to work together? Send me a message using
