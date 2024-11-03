@@ -2,7 +2,7 @@ import { Experience } from '@/types/experience';
 
 const experiences: Experience[] = [
   {
-    name: 'Jr. Software Engineer',
+    name: 'Software Engineer',
     duration: 'Oct 2023 - Present',
     company: 'US-Bangla Group',
     url: 'https://www.linkedin.com/company/us-bangla-group',
