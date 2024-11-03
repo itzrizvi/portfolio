@@ -3,7 +3,7 @@
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import { ArrowUpRightIcon, ArrowBigLeftDashIcon } from 'lucide-react';
+import { ArrowUpRightIcon, MoveLeft, LucideMoveLeft } from 'lucide-react';
 
 import Link from 'next/link';
 
@@ -45,8 +45,13 @@ const Header = (props: HeaderProps) => {
         animate={animation.show}
       >
         <div className="flex flex-col gap-3">
-          <ArrowBigLeftDashIcon className="ml-2 size-5" />
-          <div className="text-3xl font-bold">{name}</div>
+          <div className="flex flex-row gap-3">
+            <Link href={'/#projects'} title="Go Back">
+              <MoveLeft className="size-8" />
+            </Link>
+
+            <div className="text-3xl font-bold">{name}</div>
+          </div>
           <div>{description}</div>
         </div>
       </motion.div>
