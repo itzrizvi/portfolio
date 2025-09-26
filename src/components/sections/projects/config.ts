@@ -7,7 +7,8 @@ const projects: Project[] = [
     description:
       'Bangladesh’s Largest Food Delivery App at Your Fingertips with 500K downloads so far!!!, Read More...',
     thumbnail: '/images/projects/foodi_mobile_app/cover.webp',
-    tags: ['TypeScript', 'React Native', 'RTK', 'MMKV']
+    tags: ['TypeScript', 'React Native', 'RTK', 'MMKV'],
+    is_public:false
   },
   {
     name: 'Foodi Partner App',
@@ -15,7 +16,8 @@ const projects: Project[] = [
     description:
       'Streamline Your Business with Bangladesh’s Largest Food Delivery Network, Read More...',
     thumbnail: '/images/projects/foodi_partner_app/cover.webp',
-    tags: ['TypeScript', 'React Native', 'RTK', 'MMKV']
+    tags: ['TypeScript', 'React Native', 'RTK', 'MMKV'],
+    is_public:false
   },
   {
     name: 'Foodi (Restaurant Portal)',
@@ -23,7 +25,8 @@ const projects: Project[] = [
     description:
       'Bangladesh largest food delivery app Foodi, which has several parts and the restaurant portal is one of the vital. Read More...',
     thumbnail: '/images/projects/foodi_restaurant_portal/cover.webp',
-    tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik']
+    tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik'],
+    is_public:false
   },
   {
     name: 'Foodi (CMS - Customer Management System)',
@@ -31,7 +34,8 @@ const projects: Project[] = [
     description:
       'The Ultimate Content Management for Bangladesh’s Largest Food Delivery Platform, Read More...',
     thumbnail: '/images/projects/foodi_cms/cover.webp',
-    tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik', 'Redux']
+    tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik', 'Redux'],
+    is_public:false
   },
   {
     name: 'Foodi (CRM - Customer Relationship Management)',
@@ -39,7 +43,8 @@ const projects: Project[] = [
     description:
       'Advanced Customer Relationship Management for Foodi, Bangladesh’s Leading Food Delivery Service, Read More...',
     thumbnail: '/images/projects/foodi_crm/cover.webp',
-    tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik', 'Redux']
+    tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik', 'Redux'],
+    is_public:false
   },
   {
     name: 'iMessage - Live Chat',
@@ -47,7 +52,8 @@ const projects: Project[] = [
     description:
       'iMessage is a simple live chatting pet project of mine for doing anonymous chatting and fun, Read More...',
     thumbnail: '/images/projects/imessage_live_chat/cover.webp',
-    tags: ['TypeScript', 'NextJs', 'Charka UI', 'Prisma', 'GraphQL']
+    tags: ['TypeScript', 'NextJs', 'Charka UI', 'Prisma', 'GraphQL'],
+    is_public:true
   },
   {
     name: 'E-commerce Backend',
@@ -63,7 +69,8 @@ const projects: Project[] = [
       'PostgreSQL',
       'Sequelize',
       'AWS'
-    ]
+    ],
+    is_public:true
   }
 ];
 

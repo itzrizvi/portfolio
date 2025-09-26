@@ -29,24 +29,38 @@ function ProjectCard({
   thumbnail,
   slug,
   tags,
-  className
+  className,
+  is_public
 }: ProjectCardProps) {
   return (
     <Card
       className={cn(
         'group relative flex flex-col justify-between overflow-hidden rounded-md bg-muted/40',
+        !is_public && 'cursor-default',
         className
       )}
     >
-      <CardContent className="z-[2] inline-block w-full overflow-hidden p-0">
+      <CardContent className="z-[2] inline-block w-full overflow-hidden p-0 relative">
         <Image
           src={thumbnail || '/placeholder.svg'}
           alt={`Image of ${name}`}
           width={0}
           height={0}
           sizes="100vw"
-          className="aspect-[16/9] w-full object-cover transition-transform duration-300 hover:scale-105"
+          className={cn(
+            "aspect-[16/9] w-full object-cover transition-all duration-300",
+            is_public ? "hover:scale-105" : "blur-sm filter"
+          )}
         />
+        {!is_public && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div className="text-center text-white px-4">
+              <p className="text-sm font-medium">
+                Exclusive preview — drop me a note to explore.
+              </p>
+            </div>
+          </div>
+        )}
       </CardContent>
       <CardFooter className="grid grid-cols-1 items-center gap-4 p-4 md:p-6 lg:grid-cols-1">
         <div>
@@ -61,7 +75,7 @@ function ProjectCard({
           </div>
         </div>
       </CardFooter>
-      <Link href={'/projects/' + slug} className="z-1 absolute inset-0 block" />
+      {is_public && <Link href={'/projects/' + slug} className="z-1 absolute inset-0 block" />}
     </Card>
   );
 }

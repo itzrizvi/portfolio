@@ -35,6 +35,7 @@ function Projects() {
               description={project.description}
               tags={project.tags}
               thumbnail={project.thumbnail}
+              is_public={project.is_public}
             />
           ))}
         </div>
