@@ -2,17 +2,17 @@ import { Project } from '@/types/project';
 
 const projects: Project[] = [
   {
-    name: 'Foodi Mobile App',
-    slug: 'foodi_mobile_app',
+    name: 'Exclusive Project 1',
+    slug: '',
     description:
-      'Bangladesh’s Largest Food Delivery App at Your Fingertips with 500K downloads so far!!!, Read More...',
+      'Bangladesh’s Largest Food Delivery App at Your Fingertips with 1M+ downloads so far!!!, Read More...',
     thumbnail: '/images/projects/foodi_mobile_app/cover.webp',
     tags: ['TypeScript', 'React Native', 'RTK', 'MMKV'],
     is_public:false
   },
   {
-    name: 'Foodi Partner App',
-    slug: 'foodi_partner_app',
+    name: 'Exclusive Project 2',
+    slug: '',
     description:
       'Streamline Your Business with Bangladesh’s Largest Food Delivery Network, Read More...',
     thumbnail: '/images/projects/foodi_partner_app/cover.webp',
@@ -20,17 +20,17 @@ const projects: Project[] = [
     is_public:false
   },
   {
-    name: 'Foodi (Restaurant Portal)',
-    slug: 'foodi_restaurant_portal',
+    name: 'Exclusive Project 3',
+    slug: '',
     description:
-      'Bangladesh largest food delivery app Foodi, which has several parts and the restaurant portal is one of the vital. Read More...',
+      'Bangladesh largest food delivery app, which has several parts and the restaurant portal is one of the vital. Read More...',
     thumbnail: '/images/projects/foodi_restaurant_portal/cover.webp',
     tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik'],
     is_public:false
   },
   {
-    name: 'Foodi (CMS - Customer Management System)',
-    slug: 'foodi_cms',
+    name: 'Exclusive Project 4',
+    slug: '',
     description:
       'The Ultimate Content Management for Bangladesh’s Largest Food Delivery Platform, Read More...',
     thumbnail: '/images/projects/foodi_cms/cover.webp',
@@ -38,10 +38,10 @@ const projects: Project[] = [
     is_public:false
   },
   {
-    name: 'Foodi (CRM - Customer Relationship Management)',
-    slug: 'foodi_crm',
+    name: 'Exclusive Project 5',
+    slug: '',
     description:
-      'Advanced Customer Relationship Management for Foodi, Bangladesh’s Leading Food Delivery Service, Read More...',
+      'Advanced Customer Relationship Management for food delivery app, Bangladesh’s Leading Food Delivery Service, Read More...',
     thumbnail: '/images/projects/foodi_crm/cover.webp',
     tags: ['TypeScript', 'NextJS', 'Primereact', 'Primeflex', 'formik', 'Redux'],
     is_public:false

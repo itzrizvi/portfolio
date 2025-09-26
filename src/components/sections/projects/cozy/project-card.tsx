@@ -41,23 +41,30 @@ function ProjectCard({
       )}
     >
       <CardContent className="z-[2] inline-block w-full overflow-hidden p-0 relative">
-        <Image
-          src={thumbnail || '/placeholder.svg'}
-          alt={`Image of ${name}`}
-          width={0}
-          height={0}
-          sizes="100vw"
-          className={cn(
-            "aspect-[16/9] w-full object-cover transition-all duration-300",
-            is_public ? "hover:scale-105" : "blur-[8px] filter"
-          )}
-        />
-        {!is_public && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            <div className="text-center text-white px-4">
-              <p className="text-sm font-medium">
-                Exclusive preview — drop me a note to explore.
-              </p>
+        {is_public ? (
+          <Image
+            src={thumbnail || '/placeholder.svg'}
+            alt={`Image of ${name}`}
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="aspect-[16/9] w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+        ) : (
+          <div className="aspect-[16/9] w-full bg-gradient-to-br from-gray-200 to-gray-400 dark:from-gray-700 dark:to-gray-900 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-300/50 to-gray-500/50 dark:from-gray-600/50 dark:to-gray-800/50"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-gray-600 dark:text-gray-400 px-4">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gray-400 dark:bg-gray-600 rounded-lg blur-sm"></div>
+                <p className="text-sm font-medium opacity-60">Exclusive Content</p>
+              </div>
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="text-center text-white px-4">
+                <p className="text-sm font-medium">
+                  Exclusive preview — drop me a note to explore.
+                </p>
+              </div>
             </div>
           </div>
         )}
