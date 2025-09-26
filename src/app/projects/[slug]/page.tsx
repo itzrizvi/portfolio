@@ -3,6 +3,7 @@ import type { Metadata, ResolvingMetadata } from 'next';
 import { notFound } from 'next/navigation';
 
 import { getAllPages, getPage, type ProjectMetadata } from '@/lib/mdx';
+import { projects } from '@/components/sections/projects/config';
 import Header from './header';
 
 type ProjectPageProps = {
@@ -13,9 +14,15 @@ type ProjectPageProps = {
 };
 
 export const generateStaticParams = (): Array<ProjectPageProps['params']> => {
-  return getAllPages<ProjectMetadata>('projects').map((project) => ({
-    slug: project.slug
-  }));
+  // Only generate static params for public projects
+  return getAllPages<ProjectMetadata>('projects')
+    .filter((project) => {
+      const projectConfig = projects.find(p => p.slug === project.slug);
+      return projectConfig && projectConfig.is_public;
+    })
+    .map((project) => ({
+      slug: project.slug
+    }));
 };
 
 export const generateMetadata = async (
@@ -27,6 +34,12 @@ export const generateMetadata = async (
   const project = getPage<ProjectMetadata>(`projects/${params.slug}`);
 
   if (!project) {
+    return {};
+  }
+
+  // Check if the project is public
+  const projectConfig = projects.find(p => p.slug === params.slug);
+  if (!projectConfig || !projectConfig.is_public) {
     return {};
   }
 
@@ -81,6 +94,14 @@ const ProjectPage = (props: ProjectPageProps) => {
   const project = getPage<ProjectMetadata>(`projects/${slug}`);
 
   if (!project) {
+    notFound();
+  }
+
+  // Check if the project is public by looking up in the projects config
+  const projectConfig = projects.find(p => p.slug === slug);
+  
+  // If project is not public, show 404
+  if (!projectConfig || !projectConfig.is_public) {
     notFound();
   }
 
