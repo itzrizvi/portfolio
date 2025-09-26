@@ -49,7 +49,7 @@ function ProjectCard({
           sizes="100vw"
           className={cn(
             "aspect-[16/9] w-full object-cover transition-all duration-300",
-            is_public ? "hover:scale-105" : "blur-sm filter"
+            is_public ? "hover:scale-105" : "blur-[8px] filter"
           )}
         />
         {!is_public && (
