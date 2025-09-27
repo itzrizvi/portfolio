@@ -2,7 +2,7 @@ import { Project } from '@/types/project';
 
 const projects: Project[] = [
   {
-    name: 'Exclusive Project 1',
+    name: 'Exclusive Project 1 (Android and iOS App)',
     slug: '',
     description:
       'Bangladesh’s Largest Food Delivery App at Your Fingertips with 1M+ downloads so far!!!, Read More...',
@@ -11,7 +11,7 @@ const projects: Project[] = [
     is_public:false
   },
   {
-    name: 'Exclusive Project 2',
+    name: 'Exclusive Project 2 (Partner App)',
     slug: '',
     description:
       'Streamline Your Business with Bangladesh’s Largest Food Delivery Network, Read More...',
@@ -20,7 +20,7 @@ const projects: Project[] = [
     is_public:false
   },
   {
-    name: 'Exclusive Project 3',
+    name: 'Exclusive Project 3 (Restaurant Portal)',
     slug: '',
     description:
       'Bangladesh largest food delivery app, which has several parts and the restaurant portal is one of the vital. Read More...',
@@ -29,7 +29,7 @@ const projects: Project[] = [
     is_public:false
   },
   {
-    name: 'Exclusive Project 4',
+    name: 'Exclusive Project 4 (CMS)',
     slug: '',
     description:
       'The Ultimate Content Management for Bangladesh’s Largest Food Delivery Platform, Read More...',
@@ -38,7 +38,7 @@ const projects: Project[] = [
     is_public:false
   },
   {
-    name: 'Exclusive Project 5',
+    name: 'Exclusive Project 5 (CRM)',
     slug: '',
     description:
       'Advanced Customer Relationship Management for food delivery app, Bangladesh’s Leading Food Delivery Service, Read More...',
