@@ -39,11 +39,6 @@ const contact: Contact = {
       Icon: SiGitlab
     },
     {
-      name: 'Gitlab (Work)',
-      href: 'https://vcs.technonext.com/shahriar.rizvi',
-      Icon: SiGitlab
-    },
-    {
       name: 'UpWork',
       href: 'https://www.upwork.com/freelancers/~016563ded4572efd4a',
       Icon: SiUpwork
